@@ -1,0 +1,495 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipio de Shinahota</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Add some custom animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+  <style>
+   
+    /* Styles for superior education institutions */
+    .institution-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .institution-card {
+      width: 30%;
+      min-width: 250px;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      /* Soft white background */
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .institution-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .institution-card img {
+      max-width: 100%;
+      /* Ensure images fit within the card */
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .institution-card h3 {
+      color: #34495e;
+      /* Dark blue-gray for titles */
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: 500;
+      /* Slightly lighter font weight */
+    }
+
+    .institution-card p {
+      color: #555;
+      /* Medium gray for descriptions */
+      font-size: 1.1em;
+      font-weight: 400;
+    }
+
+    .institution-card a {
+      text-decoration: none;
+      color: #2980b9;
+      /* Steel blue */
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .institution-card a:hover {
+      color: #20639b;
+      /* Darker steel blue */
+    }
+
+    /* New Styles for Organized Layout */
+    .education-section,
+    .health-section {
+      margin-bottom: 40px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+      font-size: 3em;
+      color: #34495e;
+      /* Dark blue-gray */
+      border-bottom: 5px solid #87ceeb;
+      /* Sky blue for title underline */
+      padding-bottom: 10px;
+      display: inline-block;
+      font-weight: 700;
+      /* Bolder font weight for section titles */
+      font-family: 'Arial', sans-serif;
+      /* Modern font for titles */
+    }
+
+    .content-block {
+      margin-bottom: 30px;
+      padding: 25px;
+      background-color: #f0f4f7;
+      /* Light blue-gray background */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .content-block h3 {
+      color: #2980b9;
+      /* Steel blue */
+      margin-bottom: 15px;
+      font-size: 1.7em;
+      font-weight: 600;
+      /* Slightly lighter font weight */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* Updated font */
+    }
+
+    .content-block p {
+      color: #666;
+      font-size: 1.1em;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    .hospital-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+nav
+    .hospital-list img {
+      max-width: 70%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .map-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Styles for the hero section */
+    .hero-section {
+      background: linear-gradient(135deg, #4a90e2, #50c878);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-section h2 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-weight: 700;
+      border-bottom: 5px solid white;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+
+    .hero-section p {
+      font-size: 1.6em;
+      color: #f0f8ff;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* Styles for each section (education and health) */
+    .education-section,
+    .health-section {
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+
+    /* Section headers */
+    .section-header h2 {
+      font-size: 3.5em;
+      color: #34495e;
+      border-bottom: 5px solid #87ceeb;
+      padding-bottom: 10px;
+      display: inline-block;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    /* Content blocks */
+    .content-block {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .content-block h3 {
+      color: #2980b9;
+      font-size: 2.2em;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #2980b9;
+      padding-bottom: 10px;
+    }
+
+    .content-block p {
+      color: #555;
+      font-size: 1.2em;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    /* Image gallery styles */
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 48%;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Styles for hospitals list */
+    .hospital-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #f0f8ff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hospital-list h4 {
+      color: #2980b9;
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .hospital-list p {
+      color: #555;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .hospital-list img {
+      width: 90%;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .hospital-list .map-container {
+      margin-top: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Institution grid */
+    .institution-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .institution-card {
+      width: 30%;
+      min-width: 250px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .institution-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .institution-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .institution-card h3 {
+      color: #34495e;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .institution-card p {
+      color: #555;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    .institution-card a {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .institution-card a:hover {
+      color: #20639b;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 60px 20px;
+      }
+
+      .hero-section h2 {
+        font-size: 3em;
+      }
+
+      .hero-section p {
+        font-size: 1.4em;
+      }
+
+      .section-header h2 {
+        font-size: 3em;
+      }
+
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery img {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      .institution-grid {
+        flex-direction: column;
+      }
+
+      .institution-card {
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <div class="main-container">
+    <section class="hero-section" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+      <h2>Educación de Calidad y Salud Integral</h2>
+      <p>Un futuro saludable y educado para Shinahota.</p>
+    </section>
+
+    <section class="education-section informacion-general-sectionn">
+      <div class="hero-section">
+        <h2>Educación</h2>
+      </div>
+
+      <div class="content-block">
+        <h3>Acerca de la Educación en Shinahota</h3>
+        <div class="gallery">
+          <img src="image/eduemi1.jpg" alt="Educación 1">
+          <img src="image/uno1.jpg" alt="Educación 2">
+        </div>
+        <p>La educación es un derecho fundamental que debe estar al alcance de todos, independientemente de su origen, situación económica o social. Como municipio, sabemos que tenemos la responsabilidad de garantizar que cada niño, cada joven y cada adulto tenga la oportunidad de aprender, crecer y alcanzar su máximo potencial. No podemos concebir un futuro próspero sin antes invertir en el conocimiento, la formación y la creatividad de quienes componen nuestra comunidad.</p>
+        <p>Hoy más que nunca, la educación no es solo una cuestión de contenidos académicos. La educación debe ser un proceso integral que forme ciudadanos comprometidos, responsables y críticos. Es nuestra misión, como municipio, proveer los recursos y las herramientas necesarias para que nuestros estudiantes no solo aprendan matemáticas, ciencias o historia, sino también los valores fundamentales que deben guiar su vida diaria: el respeto, la solidaridad, la empatía y el amor por el aprendizaje.</p>
+        <p>El municipio de Shinahota cuenta con 33 unidades educativas y una población estudiantil de 8,549 en los niveles inicial, primario y secundario en la gestión 2024, además de instituciones de formación superior.</p>
+      </div>
+
+      <div class="institution-grid">
+        <div class="institution-card">
+          <img src="image/garcia1.jpg" alt="Álvaro García Linera">
+          <h3>Álvaro García Linera</h3>
+          <p>Shinahota</p>
+          <a href="https://www.facebook.com/InstitutoTecnologicoAlvaroGarciaLinera">Enlace a la página</a>
+        </div>
+        <div class="institution-card">
+          <img src="image/emi.jpg" alt="EMI Escuela Militar de Ingeniería">
+          <h3>EMI Escuela Militar de Ingeniería</h3>
+          <p>Shinahota</p>
+          <a href="https://www.facebook.com/emiuat">Enlace a la página</a>
+        </div>
+        <div class="institution-card">
+          <img src="image/uno.jpg" alt="UNO Universidad Nacional del Oriente">
+          <h3>UNO Universidad Nacional del Oriente</h3>
+          <p>Shinahota</p>
+          <a href="https://www.facebook.com/UnoShina">Enlace a la página</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="health-section informacion-general-sectionn">
+      <div class="hero-section">
+        <h2>Salud</h2>
+      </div>
+
+      <div class="content-block">
+        <h3>Acerca de la Salud en Shinahota</h3>
+        <div class="gallery">
+          <img src="image/salud1.jpg" alt="Salud 1">
+          <img src="image/salud2.jpg" alt="Salud 2">
+        </div>
+        <p>Como municipio, tenemos la oportunidad y la obligación de construir un sistema de salud más accesible, eficiente y de calidad para todos. La salud es un derecho fundamental, y debemos asegurarnos de que cada ciudadano tenga la oportunidad de disfrutarla. Trabajaremos juntos para crear un entorno más saludable, para prevenir enfermedades y para tratar con dignidad y respeto a quienes necesiten atención médica.</p>
+        <p>Shinahota cuenta con un hospital de 2do nivel, cinco centros de salud y dos postas de salud en la gestión 2024.</p>
+      </div>
+
+      <section class="education-health-section">
+        <h3>Hospitales</h3>
+        <ul class="hospital-list">
+          <li>
+            <h4>Centro de Salud - Shinahota</h4>
+            <p><strong>Ubicación:</strong> Poblacion Shinahota, Shinahota - Cochabamba</p>
+            <p><strong>Servicios:</strong> Atención en diversas especialidades médicas, incluyendo ginecologia, farmacia, odontologia y atencion general.</p>
+            <img src="image/centroshina.png" alt="Hospital SHINAHOTA">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.608169951948!2d-65.2442515818632!3d-16.990870831331907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e44fcbb9db2195%3A0xcf36120fa8c825df!2sHospital%20Shinahota!5e1!3m2!1ses!2sbo!4v1740029850505!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+          <li>
+            <h4>Centro de Salud - San Isidro</h4>
+            <p><strong>Ubicación:</strong>Poblacion San Isidro, Shinahota - Cochabamba</p>
+            <p><strong>Servicios:</strong>  Atención en diversas especialidades médicas, incluyendo ginecologia, farmacia, odontologia y atencion general</p>
+            <img src="image/centroisidro.jpeg" alt="Hospital de Clínicas">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.866934077629!2d-65.32155448421807!3d-17.00226010986706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e445736524d957%3A0x2934a644524b4359!2sC.S.%20San%20Isidro!5e1!3m2!1ses!2sbo!4v1740030168946!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </div>
+  <footer id="footer"></footer>
+  <script src="js/scripts.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

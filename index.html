@@ -1,0 +1,415 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio de Shinahota</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Add some custom animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="welcome-image-container position-relative">
+        <video autoplay muted loop>
+            <source src="video/SHINAHOTA 2020.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+      <!--  <img src="image/edificio municipal.jpg" alt="Paisaje de Shinahota" class="w-100 h-100 object-fit-cover"> -->
+        <div class="welcome-overlay">
+            <div class="welcome-content-expanded text-center">
+                <h2 class="welcome-title">Bienvenido a Shinahota</h2>
+                <p class="welcome-subtitle">Corazón del Chapare, Tierra de Progreso</p>
+                <img src="image/MARCA SHINAHOTA.png" alt="Paisaje de Shinahota" class="welcome-box-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <section class="content-wrapper informacion-general-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-success">
+                        <i class="fas fa-map-marker-alt me-3"></i>Conoce Nuestro Municipio
+                    </h2>
+                    <div class="section-title-underline"></div>
+                </div>
+                <div class="card shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-md-5 image-text-overlay">
+                            <img src="image/centro_de_salud.png" alt="Paisaje de Shinahota" class="card-img h-100 object-fit-cover">
+                            <div class="overlay-text">
+                                <h5>Shinahota: Corazón del Chapare</h5>
+                                <p>Un paisaje de esperanza y progreso</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body context-highlight">
+                                <h3 class="context-title">Localidad Municipal</h3>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="lead">Shinahota es una pequeña ciudad y municipio de Bolivia, ubicado en la 
+                                            provincia de Tiraque en el Departamento de Cochabamba. Se encuentra 183 km al noreste 
+                                            de la ciudad de Cochabamba  , estando a la orilla del este del río Vinchuta, curso superior del río Chapare.</p>
+                                    </div>
+                                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                                        <a href="contactos.html"  class="btn btn-link mt-2" style="text-decoration: none; font-size: 2em;">
+                                            <i class="fas fa-map-marked-alt me-2"></i> Ubicarnos
+                                        </a>
+                                    </div>
+                                    <div class="col-12 text-center mt-3">
+                                        <a href="contactos.html" class="btn btn-primary-soft">Más Información</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-wrapper galeria-turistica-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-info">
+                        <i class="fas fa-images me-3"></i>Galería Turística
+                    </h2>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="image-grid">
+                            <img src="image/DIN KON.jpg" alt="Imagen Turística 2">
+                            <img src="image/Parque de diversiones carrasco 2.jpg" alt="Imagen Turística 2">
+                            <img src="image/parque carrasco nacional.png" alt="Imagen Turística 2">
+                            <img src="image/din kon2.jpg" alt="Imagen Turística 2">
+                        </div>
+                        <h3 class="card-title mt-3">Descubre la Magia de Shinahota</h3>
+                        <p class="card-text">
+                            Sumérgete en la belleza natural y cultural de Shinahota. Desde sus paisajes exuberantes hasta su rica historia, cada rincón ofrece una experiencia inolvidable. Explora con nosotros los tesoros escondidos de este paraíso tropical.
+                        </p>
+                        <a href="turismo.html" class="btn btn-primary-soft">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-wrapper informacion-general-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-success">
+                        <i class="fas fa-map-marker-alt me-3"></i>ACTIVIDADES DEL MUNICIPIO
+                    </h2>
+                    <div class="section-title-underline"></div>
+                </div>
+                <div class="card shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-md-12 municipality-slideshow fixed-height-slideshow">
+                            <div id="municipalitySlideshow" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/agasajo.jpg" class="d-block w-100 object-fit-cover" alt="Centro de Salud">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Agasajo para los Niños</h5>
+                                            <p>entregando regalos por navidad a la comunidad</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/agasajoDiscapacid.jpg" class="d-block w-100 object-fit-cover" alt="Centro de Salud">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Agasajo para Discapacitados</h5>
+                                            <p>entregando regalos por navidad a la comunidad</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/agasajoDiscapacidad.jpg" class="d-block w-100 object-fit-cover" alt="Centro de Salud">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Agasajo para las Madres</h5>
+                                            <p>entregando regalos por navidad a la comunidad</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/ñawpa1.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria Ñawpa Mikhuna</h5>
+                                            <p>feria que revaloriza y difunde la comida tradicional de los ancestros y las costumbres de antaño</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/ñawpa2.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria Ñawpa Mikhuna</h5>
+                                            <p>feria que revaloriza y difunde la comida tradicional de los ancestros y las costumbres de antaño</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/expo3.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria Expofrut</h5>
+                                            <p>Feria que destaca la gastronomía, el turismo y los productos locales del Trópico</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/expofrut.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria Expofrut</h5>
+                                            <p>Feria que destaca la gastronomía, el turismo y los productos locales del Trópico</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/expofrut1.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria Expofrut</h5>
+                                            <p>Feria que destaca la gastronomía, el turismo y los productos locales del Trópico</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/obra_puente.JPG" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Proyectos de infraestructura</h5>
+                                            <p>Construcción de puentes y mejoras en la señalización de tránsito</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/obra_puente1.JPG" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Proyectos de infraestructura</h5>
+                                            <p>Construcción de puentes y mejoras en la señalización de tránsito</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/obra_transito.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Proyectos de infraestructura</h5>
+                                            <p>Construcción de puentes y mejoras en la señalización de tránsito</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/urkupiña8.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria de la Virgen de Urkupiña</h5>
+                                            <p>Celebración tradicional con elección de la Ñusta y diversas actividades culturales.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/urkupiña2.png" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Feria de la Virgen de Urkupiña</h5>
+                                            <p>Celebración tradicional con elección de la Ñusta y diversas actividades culturales.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/sub15.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Campeonatos Deportivos</h5>
+                                            <p>Organización de torneos intercolegiales y campeonatos de deportivos</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/intercole.jpg" class="d-block w-100 object-fit-cover" alt="Mapa de Shinahota">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Campeonatos Deportivos</h5>
+                                            <p>Organización de torneos intercolegiales y campeonatos de deportivos</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/edificio municipal.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Sede del Gobierno Municipal</h5>
+                                            <p>El corazón administrativo de Shinahota</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#municipalitySlideshow" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#municipalitySlideshow" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="content-wrapper noticias-section">
+            <div class="container-fluid">
+                <div class="section-title">
+                    <h2 class="text-info">
+                        <i class="fas fa-newspaper me-3"></i>NOTICIAS Y SERVICIOS
+                    </h2>
+                    <div class="section-title-underline"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Noticias Destacadas</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="image/noticia1.jpg" alt="Centro Comunitario" class="img-fluid rounded mb-2"
+                                            data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                                            data-title="Nuevo Centro Comunitario"
+                                            data-content="Inauguración de moderno centro de reuniones."
+                                            data-image="image/noticia1.jpg"
+                                            data-details='["Ubicación: Centro de la ciudad", "Capacidad: 500 personas", "Horario: 9am - 8pm"]'
+                                            data-full-story="El nuevo centro comunitario abrirá sus puertas la próxima semana con una gran inauguración. Contará con espacios de reunión y diversas actividades para la comunidad.">
+                                        <div class="news-details">
+                                            <h5 class="text-info">Nuevo Centro Comunitario</h5>
+                                            <p class="small text-muted">Inauguración de moderno centro de reuniones</p>
+                                            <button class="btn btn-sm btn-primary ver-mas" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                                                data-title="Nuevo Centro Comunitario"
+                                                data-content="Inauguración de moderno centro de reuniones."
+                                                data-image="image/noticia1.jpg"
+                                                data-details='["Ubicación: Centro de la ciudad", "Capacidad: 500 personas", "Horario: 9am - 8pm"]'
+                                                data-full-story="El nuevo centro comunitario abrirá sus puertas la próxima semana con una gran inauguración. Contará con espacios de reunión y diversas actividades para la comunidad.">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Añade más contenedores de noticias aquí -->
+                                    <div class="col-md-3 mb-3">
+                                        <img src="image/NOTICIAS/descuento15.jpg" alt="Otra Noticia" class="img-fluid rounded mb-2">
+                                        <div class="news-details">
+                                            <h5 class="text-info">Super Descuento 15%</h5>
+                                            <p class="small text-muted">Solo por 3 meses, para impuestos de bienes y vehiculos</p>
+                                            <button class="btn btn-sm btn-primary ver-mas" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                                                data-title="Super Descuento 15%"
+                                                data-content="Solo por 3 meses, para impuestos de bienes y vehiculos."
+                                                data-image="image/NOTICIAS/descuento15.jpg"
+                                                data-details='["Ubicación: Alcaldia Municipal", "Horario: 8am - 12pm &x 14pm - 18pm "]'
+                                                data-full-story="📣 VEN A PAGAR TUS IMPUESTOS DE LA GESTIÓN 2024 CON EL DESCUENTO DEL 15 % A LA PROPIEDAD DE BIENES INMUEBLES, A LOS VEHÍCULOS AUTOMOTORES Y PATENTES MUNICIPALES EN EL MUNICIPIO DE SHINAHOTA🫳🏼🪙💶. vigente por 3 meses: Febrero, Marzo, Abril">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="image/NOTICIAS/noticiacarnaval.jpg" alt="Otra Noticia" class="img-fluid rounded mb-2">
+                                        <div class="news-details">
+                                            <h5 class="text-info">Carnaval Shinahota 2025</h5>
+                                            <p class="small text-muted"> CARVAVAL #SHINAHOTA “DOMINGO DE TENTACIONES -09 DE MARZO”</p>
+                                            <button class="btn btn-sm btn-primary ver-mas" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                                                data-title="Carnaval Shinahota 2025"
+                                                data-content=" CARVAVAL #SHINAHOTA “DOMINGO DE TENTACIONES -09 DE MARZO”."
+                                                data-image="image/NOTICIAS/noticiacarnaval.jpg"
+                                                data-details='["Ubicación: Plaza Principal de Shinahota"," Mas Informacion: ☎️ 76465219", "Horario: 10am - 12pm"]'
+                                                data-full-story="🟠 CARVAVAL #SHINAHOTA “DOMINGO DE TENTACIONES -09 DE MARZO”🥳🪗🎭🎈🎊
+➡️ El GAM #Shinahota a través de la Unidad de Culturas organiza este domingo 09 de marzo, el carnaval Shinahota 2025.
+🪙 Los premios es gracias al apoyo de las organizaciones e instituciones vivas del municipio. 
+📝 Las inscripciones son gratuitas para el concurso de corsos de corsos, elección de la  reina y el festival de TAKIPAYANAKU (las y los participantes deben ser mayores de 18 años).">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="image/NOTICIAS/noticiacuentas.jpg" alt="Rendicion de Cuentas Final" class="img-fluid rounded mb-2">
+                                        <div class="news-details">
+                                            <h5 class="text-info">Invitacion General de Rendicion de Cuentas Final</h5>
+                                            <p class="small text-muted">Se realiza una invitacion publica por la alcaldia municipal</p>
+                                            <button class="btn btn-sm btn-primary ver-mas" data-bs-toggle="modal" data-bs-target="#noticiaModal"
+                                                data-title="Rendicion de Cuentas Final 2024"
+                                                data-content="Se realiza una invitacion publica por la alcaldia municipal."
+                                                data-image="image/NOTICIAS/noticiacuentas.jpg"
+                                                data-details='["Ubicación: auditorio de la alcaldía", "Horario: 8am - 13pm"]'
+                                                data-full-story="📣 INVITACIÓN A LA RENDICIÓN PÚBLICA DE CUENTAS FINAL 2024
+El G.A.M de #Shinahota tiene el grato honor de invitar a todos los presidentes y representantes de las organizaciones sociales, OTBs, Sindicatos, instituciones del 
+área de salud, educación, transporte, comercio y público en general del municipio. La RPC 2024 se llevará en jueves 27 de febrero en el auditorio de la alcaldía.">
+                                                Ver más
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </div>
+    
+    <!-- Modal para Noticias -->
+    <div class="modal fade" id="noticiaModal" tabindex="-1" aria-labelledby="noticiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="noticiaModalLabel">Título de la Noticia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="noticiaModalImage" src="" class="img-fluid rounded mb-3" alt="Imagen de la Noticia">
+                        </div>
+                        <div class="col-md-6">
+                            <p id="noticiaModalContent" class="text-muted">
+                            </p>
+                            <div class="additional-details mt-3">
+                                <h6 class="text-primary">Detalles Adicionales</h6>
+                                <ul class="list-unstyled" id="noticiaModalDetails">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-story mt-4">
+                        <h6 class="text-primary mb-3">Historia Completa</h6>
+                        <div id="noticiaModalFullStory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

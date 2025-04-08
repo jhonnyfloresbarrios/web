@@ -1,0 +1,634 @@
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: 0.0625rem 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 55px;
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-left: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.75rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e9c46a;
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+    background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);
+    color: #fff;
+    text-align: center;
+    padding: 3.5rem 0;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-shadow: 0.125rem 0.1875rem 0.25rem rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.03em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.content-section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 4.5rem;
+    height: 0.35rem;
+    background: #e9c46a;
+    border-radius: 0.3rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    margin-bottom: 2.2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeIn 1.4s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.7rem;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    color: #264653;
+    margin-bottom: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #333333;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background: #e9c46a;
+    color: #333333;
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 1.15rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #d1b05d;
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #264653;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #1e3a46;
+    color: #fff;
+}
+
+.footer {
+    background: #264653;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-top: auto;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+}
+
+ul li a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, padding-left 0.3s ease, background-color 0.3s ease;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background-color: rgba(42, 157, 143, 0.05);
+}
+
+ul li a:hover {
+    color: #e9c46a;
+    padding-left: 1.5rem;
+    background-color: rgba(42, 157, 143, 0.1);
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand img {
+        max-height: 45px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0.6rem;
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.municipality-badge {
+    background-color: #e9c46a;
+    color: #333333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.3rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.1rem;
+    animation: pulse 2s infinite;
+}
+
+.municipality-mission {
+    font-style: italic;
+    color: #264653;
+    margin-top: 1.1rem;
+    animation: fadeIn 1.6s ease-in-out;
+}
+
+#impuestos .card-title {
+    color: #264653;
+}
+
+#tasas {
+    background-color: #e9ecef;
+    padding: 2.2rem 0;
+}
+
+#solicitudes ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    transition: box-shadow 0.3s ease;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+#solicitudes ul li a:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+#solicitudes ul li a i {
+    margin-right: 1rem;
+}
+
+#solicitudes ul li a span {
+    flex-grow: 1;
+}
+
+#solicitudes ul li a .download-action {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e9c46a;
+    color: #333333;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#solicitudes ul li a .download-action:hover {
+    background-color: #d1b05d;
+}
+
+#descargas ul li a {
+    color: #333333;
+}
+
+#contacto .card {
+    border: 1px solid #ced4da;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 2.2rem;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.1rem;
+    color: #aaa;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for the modal content (the information displayed) */
+.modal-content {
+    background-color: white; /* Make the container white */
+    border: 1px solid #ccc; /* Add a border to make it visible */
+    padding: 1rem; /* Add padding for better visibility */
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    color: #2a9d8f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 0.2rem solid #e9c46a;
+    padding-bottom: 0.8rem;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 1.6rem;
+}
+
+.modal-content strong {
+    font-weight: 600;
+    color: #264653;
+}
+
+/* Style for lists inside the modal */
+.modal-content ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.modal-content ul li {
+    margin-bottom: 0.6rem;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for the modal */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 20% auto;
+        padding: 1.5rem;
+    }
+
+    .modal-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+
+    .close-button {
+        font-size: 1.5rem;
+    }
+}
+
+/* General container adjustments for smaller screens */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%; /* Full width on small screens */
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+/* Adjustments for header on smaller screens */
+@media (max-width: 768px) {
+    .header {
+        height: auto; /* Adjust height dynamically */
+        padding: 0.5rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand img {
+        max-height: 35px;
+        margin-right: 0.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center align nav items */
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0; /* Remove left margin */
+        padding: 0.5rem 1rem;
+        display: block; /* Ensure each link takes full width */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2a9d8f; /* Match header background */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Hero section adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+    }
+}
+
+/* Content sections adjustments */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+/* Footer adjustments */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem 0;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Utility class adjustments */
+@media (max-width: 768px) {
+    .municipality-badge {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .municipality-mission {
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+    }
+}
+
+/* Specific adjustments for map container */
+@media (max-width: 576px) {
+    .map-container {
+        padding-bottom: 75%; /* Adjust aspect ratio */
+    }
+}
+
+/* Video Styles */
+.video-container {
+    margin-bottom: 2.2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure rounded corners are respected */
+}
+
+.video-container video {
+    width: 100%;
+    display: block; /* Remove extra space below the video */
+}

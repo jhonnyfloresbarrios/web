@@ -1,0 +1,766 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo en Shinahota</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&family=Lobster+Two:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Add some custom animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+  <style>
+    /* Styles for the new tourism content */
+    .tourism-content-section {
+      padding: 20px;
+      background-color: var(--light-background);
+    }
+
+    /* New card design */
+    .tourism-card-v2 {
+      background-color: #f8f9fa;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tourism-card-v2:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .tourism-card-header-v2 {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .tourism-card-body-v2 {
+      padding: 20px;
+    }
+
+    .tourism-card-text {
+      color: var(--text-color);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .tourism-card-image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tourism-card-image {
+      width: auto;
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .tourism-card-v2:hover .tourism-card-image {
+      transform: scale(1.1);
+    }
+
+    .tourism-contact-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .tourism-contact-table th,
+    .tourism-contact-table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tourism-contact-table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .tourism-card-footer {
+      padding: 15px;
+      text-align: center;
+      background-color: #e9ecef;
+      border-top: 1px solid #ddd;
+    }
+
+    .tourism-card-footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .tourism-card-footer a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Main tourism image */
+    .main-tourism-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .main-tourism-image:hover {
+      transform: scale(1.03);
+    }
+
+    /* Section title */
+    .tourism-title {
+      font-family: 'Lobster Two', cursive;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    /* Tourism description */
+    .tourism-description {
+      color: var(--text-color);
+      line-height: 1.8;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    /* Location details */
+    .location-details {
+      background-color: rgba(46, 204, 113, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+    }
+
+    .location-details h4 {
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-bottom: 15px;
+    }
+
+    .location-details p {
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* Style for image grid */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .image-grid img {
+      width: auto;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin: 5px;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Style for tables */
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .custom-table th,
+    .custom-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .custom-table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .custom-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .custom-table tbody tr:hover {
+      background-color: #e9ecef;
+    }
+
+    /* Enhanced card style */
+    .enhanced-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .enhanced-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .enhanced-card-header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      font-family: 'Lobster Two', cursive;
+    }
+
+    .enhanced-card-body {
+      padding: 20px;
+      color: var(--text-color);
+    }
+
+    .enhanced-card-image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .enhanced-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .enhanced-card:hover .enhanced-card-image {
+      transform: scale(1.1);
+    }
+
+    .enhanced-card-footer {
+      padding: 10px;
+      text-align: center;
+      background-color: #f8f9fa;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Image grid with titles */
+    .image-grid-with-titles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .image-container img {
+      width: auto;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin: 5px;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .image-title {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: var(--text-color);
+    }
+  </style>
+</head>
+
+<body>
+     <header id="header"></header>
+  </section>
+  <section class="tourism-content-section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <section id="cultura-hero">
+            <video autoplay muted loop>
+                <source src="video/Turismo21.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <h2>Cultura, Comunicación y Turismo</h2>
+            <p>Sumérgete en la esencia de Shinahota, donde la cultura, la comunicación y el turismo se entrelazan para
+                ofrecerte experiencias inolvidables.</p>
+          </section>
+          <!-- Main Tourism Image -->
+
+          <h2 class="tourism-title" style="font-family: 'Arial Black', sans-serif;">Descubre Shinahota</h2>
+          <p class="tourism-description">
+            Bienvenido a Shinahota, un destino vibrante con una rica historia y una belleza natural impresionante.
+            Desde paisajes exuberantes hasta una cultura local acogedora, Shinahota ofrece una experiencia única para
+            cada viajero.
+          </p>
+
+          <!-- Shinahota General Information -->
+          <div class=" enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              SHINAHOTA
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/edificio municipal.jpg" alt="Shinahota Tourism"
+                  class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text ">
+                La palabra Shinahota proviene del idioma Yuracaré cuyo significado es “Nido de hormigas”. Está ubicado
+                en la Provincia Tiraque del departamento de Cochabamba a una distancia de 180 km de la ciudad de
+                Cochabamba, se encuentra pasando Villa Tunari y antes de llegar a Chimoré. Los idiomas de uso preferente
+                son el quechua y castellano.
+              </p>
+            </div>
+          </div>
+
+          <!-- Atractivos Turísticos Naturales en la Central Majo Pampa -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              ATRACTIVOS TURÍSTICOS NATURALES EN LA CENTRAL MAJO PAMPA
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <!-- Image Grid for Majo Pampa -->
+              <div class="image-grid-with-titles">
+                <div class="image-container">
+                  <img src="image/tunel del duende.JPG" alt="Túnel del Duende">
+                  <div class="image-title">Túnel del Duende</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/cueva del murcielago - majo pampa.JPG" alt="Cueva del Murciélago">
+                  <div class="image-title">Cueva del Murciélago</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/poza.png" alt="Dogo Poza">
+                  <div class="image-title">Dogo Poza</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/espejo del diablo.JPG" alt="Espejo del Diablo">
+                  <div class="image-title">Espejo del Diablo</div>
+                </div>
+              </div>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Detalles de la Ubicación</h4>
+                <p><strong>Distancia:</strong> A 30 km de la población de Shinahota, 45 minutos en transporte.</p>
+                <p><strong>Accesibilidad:</strong> Buena.</p>
+                <p><strong>Tipo de vía:</strong> Asfalto y ripio.</p>
+                <p><strong>Transporte:</strong> Autotransporte 8 de Marzo de la población de Shinahota o servicio de
+                  taxi express.</p>
+                <p><strong>Contactos:</strong> Turismo Alcaldía 44136409.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Atractivos Turísticos Naturales El Camino del Inca -->
+          <div class=" enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              ATRACTIVOS TURÍSTICOS NATURALES EL CAMINO DEL INCA
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <!-- Image Grid for Majo Pampa -->
+              <div class="image-grid-with-titles">
+                <div class="image-container">
+                  <img src="image/camino del inca.JPG" alt="camino inca">
+                  <div class="image-title">Camino del Inca</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/lago.png" alt="LuK’u Mayu ">
+                  <div class="image-title">LuK’u Mayu</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/trekking (caminata).jpg" alt="caminata">
+                  <div class="image-title">Trekking (caminata)</div>
+                </div>
+                <div class="image-container">
+                  <img src="image/rapel.png" alt="rapel">
+                  <div class="image-title">Rappel</div>
+                </div>
+              </div>
+              <p class="tourism-card-text">
+                Camino del Inca se encuentra en el sindicato Alto Illimani, es un atractivo turístico natural y de
+                aventura el cual tiene dentro de su circuito el recorrido de una bajada de 12 curvas y el majestuoso Rio
+                Loco Mayu, una roca de 50 metros de altura. Se pude hacer las siguientes actividades, el rafting,
+                trekking (caminata), rappel y camping. Además en el rio LuK’u Mayu se puede realizar natación.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Detalles de la Ubicación</h4>
+                <p><strong>Distancia:</strong> A 20 km de distancia, a 1 hora desde la población de Shinahota.</p>
+                <p><strong>Accesibilidad:</strong> Buena.</p>
+                <p><strong>Tipo de vía:</strong> Asfalto y ripio.</p>
+                <p><strong>Transporte:</strong> Autotransporte German Busch de la población de Shinahota</p>
+                <p><strong>Contactos:</strong> Turismo Alcaldía 44136409</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- El Cañón y Puente Peatonal de Ivirizu -->
+          <div class=" enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              EL CAÑÓN Y PUENTE PEATONAL DE IVIRIZU
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/el cañon de ivirizu.JPG" alt="cañon"
+                  class="main-tourism-image">
+              </div>
+              <div class="enhanced-card-image-container">
+                <img src="image/puente peatonal.png"
+                  alt="Puente Peatonal Ivirizu Image" class="main-tourism-image">
+              </div>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Detalles de la Ubicación</h4>
+                <p><strong>Distancia:</strong> Desde Shinahota es 1 hora - aproximadamente a 36 km.</p>
+                <p><strong>Accesibilidad:</strong> Buena.</p>
+                <p><strong>Tipo de vía:</strong> Asfaltado y empedrado.</p>
+                <p><strong>Transporte:</strong> Taxi desde Shinahota o Villa Tunari.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parque Nacional Carrasco - Cavernas del Repechon - Guacharos -->
+          <div class=" enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              PARQUE NACIONAL CARRASCO - CAVERNAS DEL REPECHON - GUACHAROS
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/parque carrasco nacional.png" alt="Parque Carrasco Image"
+                  class="main-tourism-image">
+              </div>
+              <div class="enhanced-card-image-container">
+                <img src="image/guacharos.jpg" alt="Cavernas Repechon Image"
+                  class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text">
+                El municipio de Shinahota cuenta con un área protegida que se constituye en un parque nacional conocido
+                como el Parque Nacional Carrasco.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Detalles de la Ubicación</h4>
+                <p><strong>Distancia:</strong> Desde Shinahota esta aproximadamente a 35 km</p>
+                <p><strong>Accesibilidad:</strong> Buena.</p>
+                <p><strong>Tipo de vía:</strong> Asfaltado y empedrado</p>
+                <p><strong>Transporte:</strong> Autotransporte 7 de junio de Villa Tunari y taxi de Shinahota.</p>
+                <p><strong>Contactos:</strong> 4456633 – 72761712</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Complejo Turístico Panchito -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              COMPLEJO TURÍSTICO PANCHITO
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/PANCHITO.jpg" alt="Complejo Panchito Image"
+                  class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text informacion-general-sectionn">
+                Somos un complejo turístico que ofrece los siguientes servicios: Desayuno. Almuerzo, Cena, Piscina,
+                Alojamiento, Parrilleros, Canchas deportivas por el precio de 150bs por persona/día. Atendemos grupos
+                de más 50 personas, tenemos cabañas y áreas para acampar.
+              </p>
+              <div class="location-details">
+                <h4>Información de Contacto</h4>
+                <p><strong>Contacto:</strong> 72732727</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIN KONG RESORT PARK -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              DIN KONG RESORT PARK
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/DIN KON.jpg" alt="Din Kong Resort Image"
+                  class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text">
+                Ofrece una experiencia más integral a los asistentes, que consta de hospedaje, lugares de relajación,
+                actividades recreativas, servicio de alimentos y bebidas, recorridos, entre otros.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Información de Contacto</h4>
+                <p><strong>Contactos:</strong> 73999995</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PARQUE DE DIVERSIÓN CARRASCO -->
+          <div class="enhanced-card ">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              PARQUE DE DIVERSIÓN CARRASCO
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/parque diversion.png"
+                  alt="Parque Diversion Carrasco Image" class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text">
+                El parque ofrece juegos recreativos, amplios jardines, paseo en botes, area de descanso, pescado
+                despinado frito y a la planca, ademas de jugos tropicales de copoazú, chirimoya, helados de coco y
+                carambola.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Información de Contacto</h4>
+                <p><strong>Dirección:</strong> Av. Panamericana - San Isidro</p>
+                <p><strong>Contacto:</strong> 71495477</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PARQUE SURUBÍ -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              PARQUE SURUBÍ
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/parque surubi.png" alt="Parque Surubi Image"
+                  class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text">
+                Ofrece la gastronomía de pescado surubí y tambaquí, además de recorrido por todo el parque rodeado de
+                flora y fauna.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Información de Contacto</h4>
+                <p><strong>Dirección:</strong> Av. Panamericana cerca al Rio Coni</p>
+                <p><strong>Contacto:</strong> 74678739</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTRO ECOTURISTICO MILITAR ITMT -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              CENTRO ECOTURISTICO MILITAR ITMT
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <div class="enhanced-card-image-container">
+                <img src="image/parque militar.png"
+                  alt="Centro Ecoturistico Militar ITMT Image" class="main-tourism-image">
+              </div>
+              <p class="tourism-card-text">
+                Es un centro turístico administrado por personal militar que cuenta con áreas de esparcimiento y de
+                recreación. Canotaje, playas de arena, canchas de beach volley, casa de árbol, plaza de comidas, música,
+                piscina para niños, mirador y rio natural con agua cristalina.
+              </p>
+              <div class="location-details informacion-general-sectionn">
+                <h4>Información de Contacto</h4>
+                <p><strong>Dirección:</strong> Av. Panamericana frente a la Novena División del Ejército.</p>
+                <p><strong>Contacto:</strong> 71293953</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICIOS HOSPEDAJE – HOTELES, RESIDENCIALES, CABAÑAS Y ALOJAMIENTOS -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              SERVICIOS HOSPEDAJE – HOTELES, RESIDENCIALES, CABAÑAS Y ALOJAMIENTOS
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Tipo de Establecimiento</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono Celular</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Hotel</td>
+                    <td>Los Tucanes</td>
+                    <td>Carr. Cbba.-Sta.Cruz – Km 164</td>
+                    <td>62749010</td>
+                  </tr>
+                  <tr>
+                    <td>Hotel</td>
+                    <td>De Selva El Puente / Jungle Fly X-Trem</td>
+                    <td>Carr. Cbba.-Sta.Cruz – Km 164</td>
+                    <td>71540088</td>
+                  </tr>
+                  <tr>
+                    <td>Hotel</td>
+                    <td>Pinocho</td>
+                    <td>Av. El Colono</td>
+                    <td>67432121</td>
+                  </tr>
+                  <tr>
+                    <td>Cabaña</td>
+                    <td>Cumarú</td>
+                    <td>Carr. Cbba.-Sta.Cruz – Km 164</td>
+                    <td>71463735</td>
+                  </tr>
+                  <tr>
+                    <td>Residencial</td>
+                    <td>Madidi</td>
+                    <td>Calle Comercio</td>
+                    <td>73344220</td>
+                  </tr>
+                  <tr>
+                    <td>Residencial</td>
+                    <td>Ventura</td>
+                    <td>Av. Panamericana</td>
+                    <td>77589875</td>
+                  </tr>
+                  <tr>
+                    <td>Alojamiento</td>
+                    <td>Tajibos</td>
+                    <td>Av. German Busch</td>
+                    <td>65519764</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- SERVICIOS DE ALIMENTACIÓN DE PLATOS TÍPICOS DE LA REGIÓN -->
+          <div class="enhanced-card ">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              SERVICIOS DE ALIMENTACIÓN DE PLATOS TÍPICOS DE LA REGIÓN
+            </div>
+            <div class="enhanced-card-body ">
+              </div>
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Establecimiento</th>
+                    <th>Dirección</th>
+                    <th>Contacto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>BAR RESTAURANTE EL GALLO GIRO</td>
+                    <td>OTB LAS PALMERAS - SHINAHOTA</td>
+                    <td>79746358</td>
+                  </tr>
+                  <tr>
+                    <td>RESTAURANTE LOS TUCANES</td>
+                    <td>OTB LAS PALMERAS- SHINAHOTA</td>
+                    <td>71743870</td>
+                  </tr>
+                  <tr>
+                    <td>RESTAURANTE EL TUNARI</td>
+                    <td>OTB LAS PALMERAS - SHINAHOTA</td>
+                    <td>68570061</td>
+                  </tr>
+                  <tr>
+                    <td>RESTAURANTE LOS KJARAS</td>
+                    <td>VILLA BARRIENTOS - SHINAHOTA</td>
+                    <td>76996802</td>
+                  </tr>
+                  <tr>
+                    <td>RESTAURANTE CHICHARRONES ORIGINALES</td>
+                    <td>AGRIGENTO “A”- KE´NCHA MOQO</td>
+                    <td>77498388</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- SHINAHOTA OFRECE JUGOS TROPICALES -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              SHINAHOTA OFRECE JUGOS TROPICALES
+            </div>
+            <div class="enhanced-card-body informacion-general-sectionn">
+              <p class="tourism-card-text">
+                Los visitantes pueden disfrutar de riquísimos jugos tropicales de las frutas de piña, coco, naranja,
+                sandia, plátano, copoazú, entre otros.
+              </p>
+              <p class="tourism-card-text">El lugar de este servicio está en el mercado de frutas frente a la terminal
+                de buses.</p>
+            </div>
+          </div>
+
+          <!-- SERVICIO DE SALUD -->
+          <div class="enhanced-card informacion-general-sectionn">
+            <div class="enhanced-card-header " style="font-family: 'Comic Sans MS', cursive;">
+              SERVICIO DE SALUD
+            </div>
+            <div class="enhanced-card-body">
+              <ul>
+                <li>Centro de salud Shinahota - 67400767</li>
+                <li>Hospital Ibuelo – 67530050</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SERVICIO DE TRANSPORTE -->
+          <div class="enhanced-card">
+            <div class="enhanced-card-header" style="font-family: 'Comic Sans MS', cursive;">
+              SERVICIO DE TRANSPORTE
+            </div>
+            <div class="enhanced-card-body">
+              <ul>
+                <li>Autotransporte German Busch - 72261942</li>
+                <li>Autotransporte 8 de marzo - 71772157</li>
+                <li>POLICÍA SHINAHOTA - 74943617</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<footer id="footer"></footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>

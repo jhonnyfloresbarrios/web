@@ -1,0 +1,381 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Municipio de Shinahota</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Add some custom animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+  <style>
+    
+    /* Estilos adicionales para la página de inicio (puedes moverlos a style.css si lo prefieres) */
+    .hero {
+      background: linear-gradient(135deg, #c8e6c9, #fff);
+      /* Un verde suave para el hero */
+    }
+
+    .intendencia {
+      background-color: #f0f8ff;
+      /* Un azul muy claro para la intendencia */
+    }
+
+    .requisitos {
+      background-color: #fff8e1;
+      /* Un amarillo muy claro para los requisitos */
+    }
+
+    /* Animación sutil para los títulos de las secciones */
+    .content-section h3 {
+      animation: fadeIn 1s ease-in-out;
+      text-align: center;
+      /* Centrar los títulos */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media query para mejorar la legibilidad en pantallas pequeñas */
+    @media (max-width: 768px) {
+
+      .intendencia .gallery,
+      .requisitos .gallery {
+        flex-direction: column;
+        /* Apilar las imágenes en pantallas pequeñas */
+      }
+
+      .intendencia .gallery img,
+      .requisitos .gallery img {
+        width: 80%;
+        /* Ajustar el ancho de las imágenes */
+        margin-bottom: 20px;
+        /* Espacio entre las imágenes apiladas */
+      }
+    }
+    .cta-button {
+      background-color: #28a745;
+      color: #fff;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #218838;
+      transform: scale(1.03);
+    }
+
+    /* Content Sections */
+    .content-section {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .content-section:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .content-section h3 {
+      border-bottom: 4px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 2.3em;
+      color: #0056b3;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Eventos */
+    .eventos .evento {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .eventos .evento:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .eventos .evento h4 {
+      color: #007bff;
+      margin-bottom: 8px;
+      font-size: 1.5em;
+    }
+
+    .eventos .evento p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+
+    /* Intendencia Section */
+    .intendencia {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .intendencia h3 {
+      border-bottom: 4px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #0056b3;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    .intendencia p {
+      font-size: 1.3em;
+      color: #555;
+      line-height: 1.9;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .intendencia ul {
+      list-style-type: disc;
+      padding-left: 30px;
+      margin-top: 15px;
+    }
+
+    .intendencia ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Requisitos Section */
+    .requisitos {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .requisitos h3 {
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 2.2em;
+      color: #0056b3;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .requisitos ol {
+      padding-left: 35px;
+    }
+
+    .requisitos li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* Nuevos estilos para la galería en Intendencia y Requisitos */
+    .intendencia .gallery,
+    .requisitos .gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .intendencia .gallery img,
+    .requisitos .gallery img {
+      width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .intendencia .gallery img:hover,
+    .requisitos .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Estilos adicionales para mejorar la presentación de la información */
+    .intendencia p strong,
+    .requisitos p strong {
+      color: #007bff;
+    }
+
+    /* Estilos para listas más legibles */
+    .intendencia ul,
+    .requisitos ol {
+      line-height: 1.6;
+    }
+
+    .intendencia ul li,
+    .requisitos li {
+      margin-bottom: 10px;
+    }
+        /* Styles for the hero section */
+        .hero-section {
+      background: linear-gradient(135deg, #4a90e2, #50c878);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-section h2 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-weight: 700;
+      border-bottom: 5px solid white;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+
+    .hero-section p {
+      font-size: 1.6em;
+      color: #f0f8ff;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+
+<body>
+    <header id="header"></header>
+  <section class="intendencia content-section ">
+    <h3>Intendencia Municipal</h3>
+    <p>La Intendencia Municipal trabaja para garantizar el cumplimiento de las normativas y el orden en Shinahota,
+      protegiendo los derechos de los ciudadanos y fomentando un ambiente seguro y próspero.</p>
+
+    <h4>Funciones Clave</h4>
+    <ul>
+      <li><strong>Vigilancia Sanitaria:</strong> Ejecutar inspecciones en establecimientos públicos y privados para
+        asegurar la inocuidad alimentaria y el cumplimiento de las normas sanitarias.</li>
+      <li><strong>Control y Orden Público:</strong> Coordinar acciones con entidades gubernamentales y civiles para
+        mantener el orden público y garantizar la seguridad ciudadana.</li>
+      <li><strong>Resolución de Conflictos:</strong> Mediar en conflictos menores entre ciudadanos y comercios, buscando
+        soluciones justas y equitativas.</li>
+    </ul>
+
+    <h4>Registro Fotográfico de Actividades</h4>
+    <div class="gallery informacion-general-sectionn">
+      <img src="image/actividad_intendencia.jpg" alt="Registro Fotográfico Actividades 1">
+      <img src="image/actividad_intendencia1.jpg" alt="Registro Fotográfico Actividades 2">
+      <img src="image/actividad_intendencia2.jpg" alt="Registro Fotográfico Actividades 3">
+    </div>
+  </section>
+
+  <section class="requisitos content-section">
+    <h3>Requisitos para Apertura de Comercio</h3>
+    <p>Si estás pensando en abrir un comercio o servicio en Shinahota, aquí te presentamos los requisitos necesarios
+      para obtener tu licencia de funcionamiento:</p>
+
+    <h4>Documentación Requerida</h4>
+    <ol>
+      <li><strong>Solicitud Formal:</strong> Dirigida al H. Alcalde Municipal, solicitando la licencia de funcionamiento
+        para la actividad específica.</li>
+      <li><strong>Identificación:</strong> Fotocopia legible del carnet de identidad del interesado.</li>
+      <li><strong>Comprobante de Domicilio:</strong> Fotocopia de la última papeleta de pago de luz del inmueble donde se
+        realizará la actividad económica (si corresponde).</li>
+      <li><strong>Informes Técnicos:</strong>
+        <ul>
+          <li>Informe técnico de inspección por parte de la Intendencia Municipal e inspector de recaudaciones.</li>
+          <li>Informe técnico de la unidad de Medio Ambiente (si corresponde).</li>
+          <li>Informe técnico de la Dirección de Urbanismo y Catastro (si corresponde).</li>
+        </ul>
+      </li>
+      <li><strong>Ubicación:</strong> Plano de ubicación de la actividad económica y/o croquis de ubicación (si
+        corresponde).</li>
+      <li><strong>Declaración Jurada:</strong> Formulario No. 019 DDJJ (inicio de actividades, cambio de actividades).
+      </li>
+      <li><strong>Certificación Social:</strong> Certificación de la OTB, sindicato u Organización Social (si
+        corresponde).</li>
+    </ol>
+
+    <h4>Registro Fotográfico de Licencias</h4>
+    <div class="gallery informacion-general-sectionn">
+      <img src="image/licencias.jpg" alt="Registro Fotográfico Licencias 1">
+      <img src="image/licencias2.jpg" alt="Registro Fotográfico Licencias 2">
+      <img src="image/licencias1.jpg" alt="Registro Fotográfico Licencias 3">
+    </div>
+  </section>
+  <footer id="footer"></footer>
+  <script src="js/scripts.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

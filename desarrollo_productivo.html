@@ -1,0 +1,317 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio de Shinahota</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cultura.css">
+    
+    <!-- Add some custom animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <link rel="stylesheet" href="css/styles-pdf.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main class="container my-5">
+        <section class="container-fluid py-5" style="background-color: var(--light-background);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="obras-title">Desarrollo Productivo y Medioambiente</h2>
+                  <p class="obras-description">
+                    Encargados de planificar, coordinar, ejecutar, supervisar y mantener las obras de infraestructura pública
+                    dentro de la jurisdicción municipal. Su objetivo principal es garantizar el desarrollo y bienestar de la
+                    comunidad a través de la construcción y mantenimiento de infraestructuras como calles, puentes, edificios
+                    públicos, sistemas de agua potable y alcantarillado, alumbrado público, entre otros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container informacion-general-sectionn">
+                <div class="section-title">
+                    <h2 class="text-success">
+                        <i class="fas fa-map-marker-alt me-3"></i>DESCUBRE NUESTRAS ACTIVIDADES</h2>
+                    <div class="section-title-underline"></div>
+                </div>
+                <div class="card shadow-lg">
+                    <div class="row g-0">
+                        <div class="col-md-12 municipality-slideshow fixed-height-slideshow">
+                            <div id="municipalitySlideshow" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente1.jpg" class="d-block w-100 object-fit-cover" alt="Centro de Salud">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Reforestacion por el Dia del Arbol</h5>
+                                            <p>El Municipio realizó un acto de reforestación por el Dia del Arbol, a orillas del rió Shinahota.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                            <img src="image/medioambiente3.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Mejora y Embellicimiento de Jardinerias del Municipio</h5>
+                                            <p>En coordinación con las OTBs, comerciantes, transportistas y soldados del RI – 32, realizaron la mejora y embellecimiento de jardines de la población.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente4.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                            <img src="image/medioambiente5.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Campaña de Limpieza y Reciclado de Residuos Solidos</h5>
+                                            <p>La EMI Trópico a cargo del cnl. Juan Carlos Patzi ha desplegado a estudiantes para realizar este trabajo con el apoyo de las OTBs.
+                                               como tambien se realizó la jornada de reciclado de llantas usadas en la población de Shinahota, sobre todo de las gomerías y talleres de mecánicas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente6.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                            <img src="image/medioambiente7.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Proyecto de Implementacion de Estanques Piscícolas</h5>
+                                            <p>Apoyo del Fondo de Desarrollo Indígena en la Central Agropalmar, las cuales benefició a 30 familias del municipio, el monto de inversión es Bs.-  1.105.039.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente14.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Fumigacion en los Mercados de Abasto</h5>
+                                            <p>Realizaron la fumigación de los principales mercados de abasto de la población. El objetivo es eliminar los insectos que se encuentras en estos lugares.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente9.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Entrega de Insecticidas para la Produccion de Yuca</h5>
+                                            <p>La entrega de 127 unidades de insecticidas de manera gratuita para combatir el gusano "Cachon" que está afectando
+                                                 a los agricultores de la producción de yuca en la región.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente13.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Entrega Definitiva del Proyecto Piscicola</h5>
+                                            <p>Proyecto Financiado por FONADIN, Municipio y Beneficiarios.
+                                                la entrega protocolar y definitiva del proyecto de implementación de estanques piscícolas que benefician a 63 familias en los distritos II y VIII del municipio de Shinahota.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente8.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Entrega mas de 2 mil plantines de diferentes variedades </h5>
+                                            <p>Los plantines consta de palta, mango, pomelo, chirimoya y lima. Los recursos provienen del GAM-SHINAHOTA y una contraparte del sindicato. 
+                                                el objetivo es insentivar al sector agrícola del municipio para garantizar la seguridad alimentaria.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente11.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Vivero Municipal de Shinahota</h5>
+                                            <p>Más de 7 mil plantines de copazú para entregar a productores interesados en el rubro.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente12.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Campaña Vacunación para su Ganado</h5>
+                                            <p>Se realizo la camapaña de la vacuna contra la rabia bovina, la brucelosis y la Fiebre Aftosa al ganado vacuno.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/medioambiente10.jpg" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Control de Población de  Hematófagos (Muercielagos)</h5>
+                                            <p>Con el objetivo de evitar la mal de rabia hacia los bovinos</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/MEDIO/contenido carrusel 10.png" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/MEDIO/contenido carrusel 2.png" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                            <img src="image/MEDIO/contenido carrusel.png" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="slideshow-image-container">
+                                            <img src="image/MEDIO/contenido carrusel 7.png" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                            <img src="image/MEDIO/contenido carrusel 8.png" class="d-block w-100 object-fit-cover" alt="Edificio Municipal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#municipalitySlideshow" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#municipalitySlideshow" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                       >
+                    </div>
+                </div>
+            </div>
+          </section>
+        <section id="eventos-culturales" class="content-section content-wrapper ">
+            <h3 style="text-align: center; font-size: 2.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                Nuestras Campañas y Actividades</h3>
+            <div class="event-grid">
+              <div class="event-card">
+                <div class="image-container">
+                  <img src="image/MEDIO/vacunacion de NEWcastle.png" alt="Carnaval 1" class="active">
+                  <img src="image/salud2.jpg" alt="Carnaval 2">
+                </div>
+                <i class="fas fa-syringe fa-3x"></i>
+                <h4>Campañas de Vacunación</h4>
+                <p>Nuestras campañas de vacunación protegen la salud de la comunidad, previniendo enfermedades contagiosas y promoviendo un entorno saludable.</p>
+              </div>
+      
+              <div class="event-card">
+                <div class="image-container">
+                  <img src="image/MEDIO/Limpieza cuatrimestral.png" alt="Feria 1" class="active">
+                  <img src="image/MEDIO/limpeza cuatrimestral 3.png" alt="Feria 2">
+                  <img src="image/MEDIO/limpieza cuatrimestral 2.png" alt="Feria 2">
+                </div>
+                <i class="fas fa-broom fa-3x"></i>
+                <h4>Limpieza del Pueblo</h4>
+                <p>Actividades de limpieza programadas cada cuatro meses para mantener nuestro municipio limpio y saludable.</p>
+              </div>
+      
+              <div class="event-card">
+                <div class="image-container">
+                  <img src="image/MEDIO/criadero de mosquitos 2.jpg" alt="Aniversario 1" class="active">
+                  <img src="image/MEDIO/criadero de mosquitos.jpg" alt="Aniversario 2">
+                  <img src="image/medioambiente14.jpg" alt="Aniversario 3">
+                </div>
+                <i class="fas fa-bug fa-3x"></i>
+                <h4>Apoyo a Campaña de Eliminación de Criadero de Mosquitos</h4>
+                <p>Colaboramos activamente en campañas para eliminar criaderos de mosquitos y prevenir enfermedades transmitidas por estos insectos.</p>
+              </div>
+      
+              <div class="event-card">
+                <div class="image-container">
+                  <img src="image/MEDIO/reforestacion 2.png" alt="ExpoFrut 1" class="active">
+                  <img src="image/MEDIO/reforestacion 3.png" alt="ExpoFrut 2">
+                  <img src="image/MEDIO/reforestacion 4.png" alt="ExpoFrut 2">
+                  <img src="image/MEDIO/reforestacion.png" alt="ExpoFrut 2">
+                </div>
+                <i class="fas fa-tree fa-3x"></i>
+                <h4>Campañas de Reforestación</h4>
+                <p>Participa en nuestras campañas de reforestación y ayúdanos a plantar árboles para un futuro más verde.</p>
+              </div>
+      
+              <div class="event-card">
+                <div class="image-container">
+                  <img src="image/MEDIO/reciclaje 2.png" alt="Agosto 1" class="active">
+                  <img src="image/MEDIO/reciclaje.png" alt="Agosto 2">
+                </div>
+                <i class="fas fa-recycle fa-3x"></i>
+                <h4>Plan de Reciclajes</h4>
+                <p>Únete a nuestro plan de reciclaje y contribuye a la sostenibilidad de nuestro municipio.</p>
+              </div>
+            </div>
+          </section>
+        <section class="leyes-normativas-section container my-5 ">
+            <h3 style="text-align: center; font-size: 2.5em; font-weight: bold; color: var(--primary-color); margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                Ruteo de Carro Basurero</h3>
+
+            <div class="pdf-list informacion-general-sectionn">
+                <div class="pdf-row">
+                    <img src="image/alcaldia.png" alt="PDF">
+                    <div class="flex-grow-1">
+                        <h5>AREA URBANA</h5>
+                        <p> CRONOGRAMA DE RECOJO DE RESIDUOS AREA URBANA - 2024.</p>
+                    </div>
+                    <div class="pdf-actions">
+                        <button class="btn btn-success" onclick="openPdfViewer(this)" data-pdf-path="pdfs/cronograma de recojo de residuos Area urbana.pdf">
+                            <i class="fas fa-eye me-2"></i>Ver PDF
+                        </button>
+                        <a href="pdfs/cronograma de recojo de residuos Area urbana.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download me-2"></i>Descargar
+                        </a>
+                    </div>
+                </div>
+                <div class="pdf-row">
+                    <img src="image/alcaldia.png" alt="PDF">
+                    <div class="flex-grow-1">
+                        <h5>AREA RURAL</h5>
+                        <p> CRONOGRAMA DE RECOJO DE RESIDUOS AREA RURAL - 2024.</p>
+                    </div>
+                    <div class="pdf-actions">
+                        <button class="btn btn-success" onclick="openPdfViewer(this)" data-pdf-path="pdfs/Cronograma de recojo de residuos Area rural.pdf">
+                            <i class="fas fa-eye me-2"></i>Ver PDF
+                        </button>
+                        <a href="pdfs/Cronograma de recojo de residuos Area rural.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download me-2"></i>Descargar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="pdfViewerModal" tabindex="-1" aria-labelledby="pdfViewerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfViewerModalLabel">Vista Previa del Documento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="pdf-viewer-container" class="w-100" style="height: 600px; overflow: auto;">
+                        <iframe id="pdf-viewer-iframe" class="w-100 h-100" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/pdf-viewer.js"></script>
+    <footer id="footer"></footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

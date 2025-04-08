@@ -1,0 +1,606 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recaudaciones Municipales - Shinahota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="css/finanzas.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <!-- Impuestos Municipales -->
+    <section id="impuestos" class="content-section">
+        <div class="container">
+            <h2 class="section-title">UNIDAD DE INGRESOS MUNICIPALES</h2>
+
+            <!-- Video Section -->
+            <div class="video-container">
+                <video id="tax-video" width="100%" controls muted poster="image/edificio municipal.jpg">
+                    <source src="video/impuestos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="row">
+                <!-- IMPBI Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-home me-2"></i>
+                                IMPBI - Impuesto Municipal a la Propiedad de Bienes Inmuebles
+                            </h5>
+                            <p class="card-text">El IMPBI es fundamental para el financiamiento de proyectos locales,
+                                mejorando nuestra infraestructura y servicios.</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" class="btn btn-primary impbi-info-btn" style="font-size: 1.0rem;">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    Guia para Impuestos de Bienes
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="impbi-info modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>IMPBI - Requisitos e Información</h2>
+                            <p>
+                                <strong>GOBIERNO AUTONOMO MUNICIPAL DE SHINAHOTA</strong><br>
+                                <strong>GUIA MUNICIPAL DE TRAMITES EN LA UNIDAD DE RECAUDACIONES</strong><br><br>
+                                <strong>IMPUESTO MUNICIPAL A LA PROPIEDAD DE BIENES IMNUEBLES</strong><br><br>
+                                <strong>a) Requisitos para Inscripción al Padrón Municipal de Contribuyentes al Impuesto Municipal de Bienes Inmuebles</strong><br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Catastro<br>
+                                - Minuta de trasferencia de inmueble o Documento privado de transferencia con reconocimiento de firmas<br>
+                                - Plano con visto bueno de Dirección de Urbanismo y Catastro<br>
+                                - Fotocopia de carnet de identidad<br>
+                                - Certificación de OTB<br><br>
+                                Las personas jurídicas, además de los detallado precedentemente deberán presentar:<br>
+                                - Escritura pública de constitución<br>
+                                - Poder del Representante legal<br>
+                                - Número de Identificación Tributaria (NIT)<br><br>
+                                <strong>b) Requisitos para el pago del Impuesto a la Propiedad de Bienes Inmuebles – IMPBI (bienes inmuebles registrados)</strong><br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Catastro<br>
+                                - Boleta de pago gestión anterior<br><br>
+                                <strong>c) Requisitos para el pago del IMPBI con modificación de datos técnicos</strong><br>
+                                - Solicitud fundamentada o memorial dirigido al Alcalde Municipal<br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Urbano<br>
+                                - Plano que exponga las modificaciones a la infraestructura con visto bueno de la Dirección de Urbanismo y Urbano<br>
+                                - Folio Real Actualizado<br>
+                                - Resolución de Modificación de Datos técnicos<br><br>
+                                <strong>d) Requisitos para el pago del IMPBI de Avances</strong><br>
+                                - Resolución Municipal de Avance<br>
+                                - Plano visado por la Dirección de Urbanismo y Catastro<br>
+                                - Certificado catastral<br><br>
+                                <strong>e) Requisitos para el pago del IMPBI para Fraccionamiento de bienes inmuebles</strong><br>
+                                - Folio Real de la división y partición<br>
+                                - Resolución Municipal de fraccionamiento<br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Catastro<br>
+                                - Ultima Boleta de pago del IMPBI, del total global del terreno sin fraccionar<br>
+                                - Plano de construcción (si corresponde)<br><br>
+                                <strong>f) Registro y pago del Impuesto Municipal a la Propiedad rural.</strong><br>
+                                - Boleta de pago gestión anterior<br>
+                                - Titulo ejecutorial<br>
+                                - Folio Real<br>
+                                - Certificado catastral<br>
+                                - Fotocopia de carnet de identidad<br><br>
+                                <strong>g) Requisitos para el pago del Impuesto Municipal a la Transferencia Onerosa de Bienes Inmuebles</strong><br>
+                                - Boleta de pago del IMPBI de la gestión vencida y de la gestión vigente<br>
+                                - Minuta de transferencia con reconocimiento de firmas visada por asesoría legal y visto bueno de la Dirección de Urbanismo y Catastro<br>
+                                - Fotocopia de carnet de identidad del comprador<br>
+                                - Fotocopia de carnet de identidad del Vendedor<br>
+                                - Folia real<br>
+                                - Plano con V°B° de la Dirección de Catastro Urbano<br>
+                                - Certificado catastral<br>
+                                - Formulario único de caja por pago de tasa de Urbanismo y Catastro<br><br>
+                                Las personas jurídicas, además de los detallado precedentemente deberán presentar:<br>
+                                - Escritura pública de constitución<br>
+                                - Poder del Representante legal<br>
+                                - Número de Identificación Tributaria (NIT)<br><br>
+                                <strong>h) Requisitos de desistimiento y/o anulación de transferencias</strong><br>
+                                - Solicitud de desistimiento de transferencia dirigida al alcalde<br>
+                                - Fotocopia de Minuta de transferencia<br>
+                                - Fotocopia de pago del IMTO<br>
+                                - Minuta de desistimiento de transferencia visado por asesoría legal<br>
+                                - Cedula de Identidad de los compradores y vendedores<br>
+                                - Pago del IMTO si el desistimiento se hizo posterior al quinto día de perfeccionado el primer acto traslativo<br><br>
+                                <strong>i) Requisitos para cambio de nombre en bienes inmuebles</strong><br>
+                                - Solicitud fundamentada o memorial Dirigida al Alcalde Municipal<br>
+                                - Documento o Minuta de transferencia, Documento de Donación, Documento de declaratoria herederos, Documento de anticipo de Legítima u otra que acredite su propiedad<br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Catastro<br>
+                                - Boleta de pago de impuesto de la gestión vigente<br>
+                                - Folio Real actualizado<br>
+                                - Informe legal de verificación y validación de la documentación<br>
+                                - Cedula de Identidad<br><br>
+                                <strong>j) Requisitos para la anexión de bienes inmuebles</strong><br>
+                                - Ficha técnica emitida por la Dirección de Urbanismo y Catastro<br>
+                                - Folio Real<br>
+                                - Plano visado por la Dirección de Urbanismo y catastro<br>
+                                - Resolución Municipal de anexión de bienes inmuebles<br><br>
+                                <strong>k) Requisitos para el descuento del 50% del IMPBI a la actividad hotelera</strong><br>
+                                - Nota fundamentada o memorial Dirigida al Alcalde Municipal<br>
+                                - Copia del Certificado de Inscripción al Servicio de Impuestos Nacionales (N.I.T.).<br>
+                                - Copia del Certificado de Afiliación otorgado por la asociación de la cual es miembro (Hoteleros).<br>
+                                - Copia del Registro o Inscripción en FUNDEMPRESA, si hubiera.<br>
+                                - Copia del Documento de Propiedad, Matrícula Computarizada o Folio Real.<br>
+                                - Copia del Poder del Representante Legal, si corresponde.<br>
+                                - Copia de la Cedula de Identidad del Representante Legal y/o propietario.<br>
+                                - Copia de los Estados Financieros correspondiente a la gestión fiscal de cobro, cuando corresponda.<br><br>
+                                Exclusiones y Exención del impuesto Municipal a la Propiedad de Bienes Inmuebles, Conforme a los Artículos 11 al 14 del DECRETO MUNICIPAL N° 027 de 18 de Abril de 2017<br><br>
+                                <strong>l) Requisitos para la exclusión de IMPBI de Bienes inmuebles de entidades publicas (Nivel Central del Estado, Gobernaciones, Gobiernos Municipales, Misiones diplomáticas)</strong><br>
+                                - Documentos de propiedad de inmuebles<br>
+                                - Folio Real<br>
+                                - Documentación que acredite su condición de entidad beneficiada con la exclusión<br>
+                                - Cedula de identidad vigente del Representante Legal<br>
+                                - Numero de Identificación Tributaria<br><br>
+                                <strong>m) Requisitos para la exención de pago del impuesto municipal a la propiedad de bienes inmuebles-IMPBI)</strong><br>
+                                Las asociaciones, fundaciones o instituciones no lucrativas:<br>
+                                - Solicitud de la exención del Impuesto Municipal a la Propiedad de Bienes Inmuebles, dirigido a la MAE del Gobierno Autónomo Municipal de Shinahota,<br>
+                                - Copia simple del Poder Notariado que acredite la representación legal que se ejerce.<br>
+                                - Resolución Suprema, Resolución Prefectural, Decreto Departamental o Gubernativa de reconocimiento de personería jurídica de la entidad, en fotocopia simple.<br>
+                                - Estatuto Orgánico, Reglamento Interno u otras norma interna en fotocopia simple.<br>
+                                - Número de Identificación Tributaria – NIT, en fotocopia simple, exceptuando a las asociaciones civiles comprendidas en el Artículo 49, de la Ley Nº 843, texto ordenado.<br>
+                                - Documento de propiedad registrados en la oficina de derechos reales que acrediten la titularidad en fotocopias simple.<br>
+                                - La documentación presentada podrá exigirse en originales para su verificación y posterior devolución.<br>
+                                - Ficha Técnica emitida por la Dirección de urbanismo y Catastro.<br><br>
+                                <strong>n) Requisitos para la Exención del 100% del Impuesto Municipal a la Propiedad de Bienes Inmuebles-IMPBI, para los beneméritos de la Guerra del Chaco y viudas</strong><br>
+                                - Original y copia del Talón de Beneficiario de su Renta de Benemérito correspondiente a la gestión en cobranza.<br>
+                                - Que el inmueble sea de su propiedad, presentando el documento de propiedad o folio real.<br>
+                                - Fotocopia de Cedula de Identidad (Benemérito y/o Viuda).<br>
+                                - Ultimo impuesto pagado del IMPBI, que señale el domicilio de vivienda, similar con la Cedula de Identidad<br><br>
+                                <strong>o) Requisitos para Exención parcial (20%) del IMPBI para personas de más de 60 años</strong><br>
+                                - Copia de Testimonio de Propiedad.<br>
+                                - Copia de Cedula de Identidad Vigente<br>
+                                - Ultimo impuesto pagado del IMPBI<br><br>
+                                <strong>p) Requisito para exención de bienes inmuebles de propiedad de las entidades financieras intervenidas por la Autoridad del Sistema Financiero</strong><br>
+                                - Memorial informando la intervención realizada<br>
+                                - Original y copia de Testimonio de Propiedad con registro en Derechos Reales del bien inmuebles intervenido<br>
+                                - Original y copia de la Orden Judicial que autoriza la intervención
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMPVAT Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-car me-2"></i>
+                                IMPVAT - Impuesto Municipal a la Propiedad de Vehículos Automotores
+                            </h5>
+                            <p class="card-text">El IMPVAT contribuye directamente al mantenimiento de la infraestructura
+                                vial, asegurando caminos seguros para todos.</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="#" class="btn btn-primary impvat-info-btn" style="font-size: 1.0rem;">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    Guia para Impuestos de Automoviles
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="impvat-info modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>IMPVAT - Requisitos e Información</h2>
+                            <p>
+                                <strong>TRAMITES DE REGISTRO DE VEHICULOS AUTOMOTORES EN EL RUAT</strong><br><br>
+
+                                <strong>a) Inscripción por importación directa vehículo</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de cedula de identidad<br>
+                                - 1 fotografía fondo rojo 4x4<br>
+                                - Documento Único de Importación o Póliza de importación (Original)<br>
+                                - Formulario de Registro Vehicular<br><br>
+
+                                <strong>b) Inscripción por importación directa vehículo con transferencia</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de cedula de identidad del vendedor<br>
+                                - Fotocopia de cedula de identidad vigente a color del comprador<br>
+                                - 1 fotografía fondo rojo de 4x4<br>
+                                - Documento Único de Importación (DUI) o Póliza de importación Original<br>
+                                - Formulario de registro Vehicular<br>
+                                - Minuta de compra y venta visado por Transito<br>
+                                - En caso de que el propietario efectúe el tramite mediante apoderado, este debe adjuntar
+                                el poder notariado con una fotocopia (vigencia del poder es de 90 dias)<br><br>
+
+                                <strong>c) Inscripción casa Comercial Vehículo</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de Cedula de Identidad vigente a color del Comprador<br>
+                                - Fotocopia de Cedula de Identidad del tramitador (si corresponde)<br>
+                                - 1 fotografía fondo rojo 4x4 del comprador<br>
+                                - Documento Único de Importación (DUI) o Póliza de importación Original<br>
+                                - Formulario de registro Vehicular<br>
+                                - Fotocopia de la factura comercial<br><br>
+
+                                <strong>d) Inscripción Casa Comercial con Transferencia</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de Cedula de identidad del vendedor<br>
+                                - Fotocopia de Cedula de Identidad vigente a color del Comprador<br>
+                                - 1 fotografía fondo rojo 4x4 del comprador<br>
+                                - Documento Único de Importación (DUI) o Póliza de importación Original<br>
+                                - Formulario de registro Vehicular<br>
+                                - Fotocopia de la factura comercial<br>
+                                - Minuta de compra y venta visada por Tránsito<br><br>
+
+                                <strong>d.1) Para personas jurídicas</strong><br>
+                                - Documento de Constitución (fotocopia legalizada)<br>
+                                - Testimonio de Poder del Represéntate Legal<br>
+                                - Numero de Identificación Tributaria – NIT<br>
+                                - Documento de Identidad del Representante Legal<br>
+                                - Documento Único de Importación (DUI) o Póliza de importación Original<br>
+                                - Formulario de registro Vehicular<br>
+                                - Factura de comercial de adquisición de vehículo (Fotocopia)<br><br>
+
+                                <strong>e) Transferencia Normal</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de Carnet de Identidad del vendedor<br>
+                                - Fotocopia a color de carnet de identidad del comprador<br>
+                                - 1 fotografía fondo rojo 4x4 del comprador<br>
+                                - CRPVA Original completo<br>
+                                - Fotocopia Documento Único de Importación (DUI) o Póliza de importación Original<br>
+                                - Munita de Compra y Venta, visado por transito<br>
+                                - Boleta de pago al IMT<br>
+                                - Minuta de compra y venta protocolizada<br>
+                                - Resolución de Transferencia de vehículos emitida por Transito<br><br>
+
+                                <strong>f) Actualización de CRPVA con costo</strong><br>
+                                - Solicitud escrita en original referido al tramite que indica dirigido al Ejecutivo
+                                Municipal<br>
+                                - Fotocopia de Carnet de identidad del tramitador<br>
+                                - CRPVA Original completo<br>
+                                - Fotocopia del poder del tramitador<br><br>
+
+                                <strong>g) Actualización de CRPVA sin costo (entidades públicas)</strong><br>
+                                - Solicitud escrita en original referido al tramite que indica dirigido al Ejecutivo
+                                Municipal<br>
+                                - Fotocopia de Carnet de identidad del tramitador<br>
+                                - CRPVA Original completo<br>
+                                - Fotocopia del poder del tramitador<br><br>
+
+                                <strong>h) Cambio de Radicatoria</strong><br>
+                                - Carpeta Municipal<br>
+                                - CRPVA Original emitido por el GAM de origen<br>
+                                - No tener deudas por Impuestos Municipal a la Propiedad de Vehículos Automotores
+                                (IMPVA)<br>
+                                - Fotocopia de Cédula de Identidad<br>
+                                - En caso de apoderado o poseedor presentar Fotocopia de Minuta de Compra y Venta o
+                                Fotocopia del Testimonio de Poder con facultades para realizar tramites de cambio de
+                                dedicatoria y fotocopia de cedula de identidad<br><br>
+
+                                <strong>h.1) Personas jurídicas</strong><br>
+                                - Carpeta Municipal<br>
+                                - CRPVA Original emitido por el GAM de origen<br>
+                                - No tener deudas por Impuestos Municipal a la Propiedad de Vehículos Automotores
+                                (IMPVA)<br>
+                                - Fotocopia de Cédula de Identidad del representante legal<br>
+                                - Fotocopia Legalizada del Poder del Representante Legal<br>
+                                - Fotocopia del Testimonio de Constitución de la entidad<br>
+                                - Numero de Identificación Tributaria – NIT<br><br>
+
+                                <strong>i) Transferencia Especiales</strong><br>
+                                La transferencia especial procederá en los siguientes casos:<br>
+                                Donación, Orden Judicial, Declaratoria de Herederos, Otros especificado por Ley<br>
+                                Requisitos:<br>
+                                - Carpeta Municipal<br>
+                                - CRPVA Original emitido por el GAM de origen<br>
+                                - No tener deudas por Impuestos Municipal a la Propiedad de Vehículos Automotores
+                                (IMPVA)<br>
+                                - Documento de transferencia especial en original y fotocopia debidamente visada por
+                                transito<br>
+                                - Fotocopia de Cédula de Identidad del Nuevo Poseedor<br><br>
+
+                                <strong>j) Modificación de Datos Técnicos</strong><br>
+                                - Carpeta Municipal<br>
+                                - CRPVA original y completo<br>
+                                - No tener deudas impositivas<br>
+                                - Informe técnico de DIPROVE<br>
+                                - Peritaje de transito<br>
+                                - Revisión Técnica vehicular por taller autorizado<br>
+                                - Minuta de compra y venta o Testimonio de Poder en caso de poseedor<br><br>
+
+                                <strong>k) Duplicado del CRPVA por perdida, robo o deterioro</strong><br>
+                                - Carpeta Municipal<br>
+                                - Denuncia presentada ante el organismo operativo de transito por la pérdida del CRPVA<br>
+                                - Certificado de robo o extravío emitido por Transito<br>
+                                - Recorte del periódico publicado por 2 días o factura de la publicación<br>
+                                - Fotocopia de Cedula de Identidad del tramitador<br><br>
+
+                                <strong>l) Duplicado de placa por perdida, robo o deterioro</strong><br>
+                                - Carpeta Municipal<br>
+                                - Fotocopia de CRPVA completo<br>
+                                - Denuncia presentada ante el organismo operativo de tránsito por la pérdida de la
+                                placa<br>
+                                - Certificado de robo o extravío de placas emitido por DIPROVE<br>
+                                - Certificado de autenticidad del vehículo emitido por DIPROVE<br>
+                                - Recorte del periódico publicado por 3 días o factura de la publicación<br>
+                                - Fotocopia de Cedula de Identidad del tramitador<br><br>
+
+                                <strong>m) Cambio de Servicio de particular a publico</strong><br>
+                                - Carpeta Municipal<br>
+                                - CRPVA Original completo<br>
+                                - Fotocopia de la tarjeta de operaciones y/o Certificación del Sindicato de
+                                Transporte<br>
+                                - Fotocopia de cédula de identidad del propietario<br>
+                                - Fotocopia de licencia de conducir<br>
+                                - No tener deudas por Impuestos Municipal a la Propiedad de Vehículos Automotores
+                                (IMPVA)<br>
+                                - Minuta de compra y venta o Testimonio de Poder en caso de poseedor<br><br>
+
+                                <strong>n) Baja tributaria por siniestro</strong><br>
+                                - Solicitud escrita<br>
+                                - Fotocopia Cedula de Identidad del propietario<br>
+                                - Informe técnico y/o certificación emitida por el Organismo Operativo de Transito que
+                                acredite el siniestro<br>
+                                - Impuesto de la última gestión<br>
+                                - Fotocopia del CRPVA<br><br>
+
+                                <strong>o) Baja tributaria por Obsolescencia o fin de vida útil</strong><br>
+                                - Solicitud dirigida al Alcalde<br>
+                                - Fotocopia de Cedula de identidad<br>
+                                - Informe técnico de DIPROVE que acredite la obsolescencia u otro documento de acredite
+                                la situación del vehículo<br>
+                                - Certificado de Tránsito que el vehículo no ha realizado inspección técnica los
+                                últimos 5 años<br>
+                                - Certificado de la ANH que el vehículo no ha cargado combustible los últimos 5
+                                años<br>
+                                - Original CRPVA<br>
+                                - Placa Original<br>
+                                - Pago del impuesto de la última gestión o sin deuda tributaria<br><br>
+
+                                <strong>p) Baja tributaria por robo</strong><br>
+                                - Solicitud dirigida al Alcalde<br>
+                                - Fotocopia de Cedula de identidad<br>
+                                - Denuncia presentada ante el organismo DIPROVE<br>
+                                - Certificado de robo de vehículo emitido por DIPROVE<br>
+                                - Reporte RUAT NET Vehículos emitido por DIPROVE ó Transito<br>
+                                - Denuncia formal presentada a la fiscalía<br>
+                                - Recorte del periódico publicado por 3 días o factura de la publicación<br>
+                                - Original CRPVA<br>
+                                - Pago del impuesto de la última gestión o sin deuda tributaria
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasas y Patentes -->
+    <section id="tasas" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Tasas y Patentes</h2>
+            <p class="lead text-center">Descubre cómo las tasas y patentes municipales impulsan el crecimiento
+                económico,
+                fomentando el desarrollo de nuevos negocios y servicios en Shinahota.</p>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary tasas-info-btn">
+                    <i class="fas fa-file-invoice-dollar me-2"></i>
+                    Guía para obtener patentes
+                </a>
+            </div>
+        </div>
+        <div class="tasas-info modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Tasas y Patentes - Requisitos e Información</h2>
+                <p>
+                    <strong>REQUISITOS PARA LA EMISIÓN DE CERTIFICACIONES IMPOSITIVAS</strong>
+                </p>
+                <ul>
+                    <li>Solicitud dirigida al Alcalde de certificación impositiva firmada por el contribuyente adjuntado
+                        fotocopia carnet de identidad o poder</li>
+                    <li>Pago de valores</li>
+                </ul>
+                <p>
+                    <strong>TASAS Y PATENTES</strong>
+                </p>
+                <p>
+                    <strong>a) Requisitos para obtención de la Licencia de Funcionamiento</strong>
+                </p>
+                <ul>
+                    <li>Solicitud de Licencia de funcionamiento dirigida al Alcalde</li>
+                    <li>Fotocopia de Cedula de Identidad del contribuyente</li>
+                    <li>Croquis de ubicación del negocio</li>
+                    <li>Factura de Luz</li>
+                    <li>Certificación de OTB</li>
+                    <li>Informe de la Unidad de Medio ambiente (cuando corresponda)</li>
+                    <li>Informe de Inspección emitida por la Intendencia</li>
+                    <li>Pago de valores municipales</li>
+                </ul>
+                <p>
+                    <strong>b) Requisitos para la INHABILITACIÓN DE ACTIVIDAD ECONÓMICA</strong>
+                </p>
+                <ul>
+                    <li>Nota de solicitud dirigida al Alcalde con la referencia “INHABILITACIÓN DE ACTIVIDAD
+                        ECONÓMICA”</li>
+                    <li>Fotocopia de Cedula de Identidad del titular</li>
+                    <li>Licencia de Funcionamiento Original en caso de estar vigente.</li>
+                    <li>Fotocopia de Licencia de Funcionamiento en caso de no estar vigente</li>
+                    <li>Fotocopia de boleta de pago de la patente anual de la gestión vigente</li>
+                    <li>Informe de verificación de Intendencia Municipal</li>
+                </ul>
+                <p>
+                    <strong>c) Requisitos pago de Patentes eventual y anual</strong>
+                </p>
+                <ul>
+                    <li>Preliquidación emitida por Intendencia Municipal (para patente eventual)</li>
+                    <li>Fotocopia Boleta de pago gestión anterior</li>
+                </ul>
+                <p>
+                    <strong>d) Requisitos pago por extracción agregados</strong>
+                </p>
+                <ul>
+                    <li>Recibo o informe de la Unidad de Medio Ambiente</li>
+                </ul>
+                <p>
+                    <strong>e) Requisitos pago por arrendamiento anual de inmuebles</strong>
+                </p>
+                <ul>
+                    <li>Fotocopia de Contrato de arrendamiento</li>
+                    <li>Fotocopia de Cedula de Identidad</li>
+                </ul>
+                <p>
+                    <strong>f) Requisitos Pago por arrendamiento eventual de bienes e inmuebles</strong>
+                </p>
+                <ul>
+                    <li>Solicitud dirigida al Alcalde de alquiler de campos deportivos u otros bienes</li>
+                    <li>Fotocopia de Cedula de identidad</li>
+                </ul>
+                <p>
+                    <strong>g) Requisitos para el pago de carnet sanitario</strong>
+                </p>
+                <ul>
+                    <li>Carnet de identidad</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guía de Solicitudes -->
+    <section id="solicitudes" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Guía de Solicitudes</h2>
+            <p class="lead text-center">Facilitamos tus trámites con guías detalladas y formularios descargables para
+                presentar
+                solicitudes de manera eficiente.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-file-pdf fa-lg me-3"></i>
+                                        <span style="font-size: 1rem;">Guia de solicitud IMPBI (PDF)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="pdfs/GUIA IMPBI.pdf" download="pdfs/GUIA IMPBI.pdf" class="download-action" style="padding: 0.3rem 0.5rem; font-size: 0.8rem;">Descargar PDF</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-file-pdf fa-lg me-3"></i>
+                                        <span style="font-size: 1rem;">Guia de solicitud IMPVAT (PDF)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="pdfs/GUIA IMPVAT.pdf" download="pdfs/GUIA IMPVAT.pdf" class="download-action" style="padding: 0.3rem 0.5rem; font-size: 0.8rem;">Descargar PDF</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-3">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-file-pdf fa-lg me-3"></i>
+                                        <span style="font-size: 1rem;">Guia de Tasas y Patentes (PDF)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <a href="pdfs/GUIA TASA Y PATENTES.pdf" download="pdfs/GUIA TASA Y PATENTES.pdf" class="download-action" style="padding: 0.3rem 0.5rem; font-size: 0.8rem;">Descargar PDF</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal fade" id="pdfViewerModal" tabindex="-1" aria-labelledby="pdfViewerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfViewerModalLabel">Vista Previa del Documento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="pdf-viewer-container" class="w-100" style="height: 600px; overflow: auto;">
+                        <iframe id="pdf-viewer-iframe" class="w-100 h-100" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            try {
+                var impbiModal = document.querySelector('.impbi-info');
+                var impvatModal = document.querySelector('.impvat-info');
+                var tasasModal = document.querySelector('.tasas-info');
+
+                var impbiBtn = document.querySelector('.impbi-info-btn');
+                var impvatBtn = document.querySelector('.impvat-info-btn');
+                var tasasBtn = document.querySelector('.tasas-info-btn');
+
+                var impbiSpan = document.querySelector('.impbi-info .close-button');
+                var impvatSpan = document.querySelector('.impvat-info .close-button');
+                var tasasSpan = document.querySelector('.tasas-info .close-button');
+
+                impbiBtn.onclick = function (event) {
+                    event.preventDefault(); 
+                    impbiModal.style.display = "block";
+                }
+
+                impvatBtn.onclick = function (event) {
+                    event.preventDefault(); 
+                    impvatModal.style.display = "block";
+                }
+
+                tasasBtn.onclick = function (event) {
+                    event.preventDefault();
+                    tasasModal.style.display = "block";
+                }
+
+                impbiSpan.onclick = function (event) {
+					event.preventDefault();
+                    impbiModal.style.display = "none";
+                }
+
+                impvatSpan.onclick = function (event) {
+					event.preventDefault();
+                    impvatModal.style.display = "none";
+                }
+
+                tasasSpan.onclick = function (event) {
+					event.preventDefault();
+                    tasasModal.style.display = "none";
+                }
+
+                window.onclick = function (event) {
+                    if (event.target == impbiModal) {
+                        impbiModal.style.display = "none";
+                    }
+
+                    if (event.target == impvatModal) {
+                        impvatModal.style.display = "none";
+                    }
+
+                    if (event.target == tasasModal) {
+                        tasasModal.style.display = "none";
+                    }
+                }
+            } catch (error) {
+                console.error("An error occurred:", error);
+            }
+
+        });
+    </script>
+    <footer id="footer"></footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

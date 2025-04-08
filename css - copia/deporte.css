@@ -1,0 +1,141 @@
+    .hero-section {
+      background: linear-gradient(135deg, #4a90e2, #50c878);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-section h2 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-weight: 700;
+      border-bottom: 5px solid white;
+      padding-bottom: 15px;
+      display: inline-block;
+    }
+
+    .hero-section p {
+      font-size: 1.6em;
+      color: #f0f8ff;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+
+/* Deportes Section */
+.deportes-section {
+  background-color: #f0f8ff; /* Light blue background */
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deportes-section h3 {
+  color: #0056b3; /* Dark blue for heading */
+  border-bottom: 3px solid #0056b3;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  text-align: center; /* Centrar el texto */
+  font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+  font-size: 1.8em; /* Aumentar el tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+.deportes-section p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Deportes Gallery */
+.deportes-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Add flex-wrap */
+}
+
+.deportes-gallery img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 15px; /* Add margin-bottom */
+}
+
+.deportes-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Campeonatos Section */
+.content-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h3 {
+  color: #0056b3; /* Dark blue for heading */
+  border-bottom: 3px solid #0056b3;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  text-align: center; /* Centrar el texto */
+  font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+  font-size: 1.8em; /* Aumentar el tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+.campeonato {
+  background-color: #e6f7ff; /* Lighter blue */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  text-align: center; /* Centrar el contenido */
+}
+
+.campeonato h4 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.campeonato p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.campeonato img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.campeonato img:hover {
+  transform: scale(1.03);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .deportes-gallery {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+  }
+
+  .deportes-gallery img {
+    width: 80%; /* Make images wider */
+    margin-bottom: 20px; /* Add more space between images */
+  }
+}

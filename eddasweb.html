@@ -1,0 +1,391 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio de Shinahota</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Add some custom animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    
+    <style>   /* Additional styles for EDDAS page */
+.eddas-header {
+    background: linear-gradient(135deg, #0066cc, #2ecc71);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 50px; /* Hace que el contenedor tenga bordes ovalados */
+    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor */
+    font-family: 'Arial', sans-serif; /* Cambia el estilo de letra */
+}
+
+.eddas-header img {
+    width: 80%; /* Ajusta la imagen para que sea más rectangular */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 20px 0;
+}
+
+/* Ajuste del tamaño de la imagen CAMPEONATO.png */
+.eddas-header .row .col-md-4 img {
+    width: 70%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Añade bordes redondeados para un toque moderno */
+}
+
+.eddas-header h1 {
+    text-align: center; /* Centra el texto del titular */
+    font-family: 'Georgia', serif; /* Cambia el estilo de letra del titular */
+    font-weight: bold; /* Hace que el titular sea más grueso */
+    font-size: 2.5em; /* Aumenta el tamaño del titular */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra para hacerlo más interesante */
+}
+
+.eddas-header h2 {
+    text-align: center; /* Centra el texto del subtítulo */
+    font-family: 'Georgia', serif; /* Cambia el estilo de letra del subtítulo */
+    font-weight: normal; /* Mantiene el subtítulo menos grueso */
+    font-size: 1.5em; /* Ajusta el tamaño del subtítulo */
+}
+        .section-divider {
+            border-top: 3px solid var(--primary-color);
+            margin: 30px 0;
+        }
+        
+        .service-stats-card {
+            background: linear-gradient(to bottom right, #e6f3e6, #f0f8ff);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-stats-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .system-components-table {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .tariff-card {
+            background: linear-gradient(to bottom right, #f0e6ff, #e6f2ff);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .centralizada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px; /* Añade bordes redondeados */
+  margin-top: 1rem; /* Añade margen superior */
+}
+    </style>
+</head>
+<body>
+
+    <header id="header"></header>
+    <main class="container my-5">
+        <!-- EDDAS Header Section -->
+        <section class="eddas-header text-center">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="image/estudiantil.jpg" alt="Logotipo de EDDAS" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h1>Entidad Descentralizada Municipal de Servicios de Agua Potable y Alcantarillado Sanitario</h1>
+                    <h2 class="text-white-50">EDDAS - Shinahota</h2>
+                </div>
+            </div>
+            <section id="cultura-hero">
+              <video autoplay muted loop>
+                  <source src="video/Turismo21.mp4" type="video/mp4">
+                  Tu navegador no soporta la etiqueta de video.
+              </video>
+              <div class="welcome-content-expanded text-center">
+                  <img src="image/MARCA SHINAHOTA.png" alt="Paisaje de Shinahota" class="welcome-box-image">
+              </div>
+            </section>
+        </section>
+    
+        <hr class="section-divider">
+        <!-- Historia Section -->
+        <section class="historia-section">
+            <div class="section-title">
+                <h2>Historia de EDDAS</h2>
+            </div>
+            <div class="card context-highlight">
+                <div class="card-body">
+                    <p>Mediante Ley Autonama Municipal GAMSHN°00208 de fecha 06/12/2018, se decreta la creacion de la "ENTIDAD DESCENTRALIZADA MUNICIPAL DE SERVICIOS DE AGUA POTABLE
+                         Y ALCANTARILLADO SANITARIO SHINAHOTA (EDDAS), Entidad responsable del servicio de agua que se ejecuto del proyecto" Const. Sistema de agua potable Integral 
+                         Shinahota D-1, D-3, D-5 el cual fue financiado con el programa MI AGUA IV.</p>
+                    <img src="image/estudiantil.jpg" alt="Mapa de Área de Servicio" class="img-fluid centralizada">
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Marco Normativo Section -->
+        <section class="marco-normativo-section">
+            <div class="section-title">
+                <h2>Marco Normativo</h2>
+            </div>
+            <div class="card context-highlight">
+                <div class="card-body">
+                    <p>Art. 20, en sus paragrafos I y III establece. Toda persona tiene derecho al acceso universal y equitativo de los servicios
+                        basicos de agua potable, alcantarillado, electricidad, gas domiciliario, postal y comunicaciones. El acceso al agua y alcantarillado constituyen derechos humanos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Nuestro Sistema Section -->
+        <section class="nuestro-sistema-section">
+            <div class="section-title">
+                <h2>NUESTRO SISTEMA</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="system-components-table card">
+                        <div class="card-body">
+                            
+                            <th>Los Componentes del Sistema son: </th>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>Captación</td>
+                                        <td>Rio Angel de la Guarda</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Obra de Toma</td>
+                                        <td>Tipo Tirolesa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red de Aduccion</td>
+                                        <td>HDPE de 12", PVC de 12, 10 pulgadas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red de Distribución</td>
+                                        <td>PVC de 1, 1 1/2, 2, 3, 4 5 pulgadas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Planta de Tratamiento</td>
+                                        <td>2 tanques semi enterrados Sistemas de filtros</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="image/estudiantil.jpg" alt="Sistema de Agua" class="img-fluid centralizada">
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Servicios Section -->
+        <section class="servicios-section">
+            <div class="section-title">
+                <h2>EDDAS Actualmente Presta el Servicio a:</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-stats-card">
+                        <h3>Afiliados Activos</h3>
+                        <p class="display-4">2539</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-stats-card">
+                        <h3>Red de Tuberia</h3>
+                        <p class="display-4">7.15 km</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-stats-card">
+                        <h3>OTBs Sindicatos</h3>
+                        <p class="display-4">26</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Tarifas Section -->
+        <section class="tarifas-section">
+            <img src="image/estudiantil.jpg" alt="Mapa de Área de Servicio" class="centralizada">
+            <div class="section-title">
+                <h2>Costos del Servicio</h2>
+            </div>
+            <p class="text-center mb-4">Los ingresos que percibe la Entidad de... Municipal de Servicios de Agua Potable y... Alcantarillado Sanitario
+                Shinahota (EDDAS)--- cuantifica las tarifas aprobadas.</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tariff-card">
+                        <h3>Tarifa Mensual Fija</h3>
+                        <p class="display-4">Bs 20</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tariff-card">
+                        <h3>Reconexion del Servicio</h3>
+                        <p class="display-4">Bs 50</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tariff-card">
+                        <h3>Cambio de Nombre</h3>
+                        <p class="display-4">Bs 100</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tariff-card">
+                        <h3>Derecho de Inscripciones</h3>
+                        <p class="display-4">Bs. 1300</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2 class="display-6 text-gradient">Requisitos para Servicios</h2>
+                </div>
+                <div class="row g-4 informacion-general-sectionn">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm hover-lift">
+                            <div class="card-header bg-soft-primary">
+                                <h3 class="card-title text-center m-0">
+                                    <i class="fas fa-water me-2"></i>Requisitos para Cambio de Nombre del Servicio de Agua
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Carta de solicitud para cambio de nombre</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Fotocopia de cédula de identidad vigente</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Croquis o plano de ubicación del predio o domicilio</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Certificación de OTB</div>
+                                            <small class="text-muted">(no excluyente)</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Documentos que acrediten su derecho propietario</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Pago de 100 Bs para el cambio de nombre</div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="alert alert-info mt-3 text-center" role="alert">
+                                    <i class="fas fa-folder-open me-2"></i>Todos los documentos deben ser presentados en un folder amarillo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm hover-lift">
+                            <div class="card-header bg-soft-success">
+                                <h3 class="card-title text-center m-0">
+                                    <i class="fas fa-faucet me-2"></i>Requisitos para Nueva Conexión de Agua
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Carta de solicitud de nueva conexión</div>
+                                            <small class="text-muted">Dirigida al presidente del directorio, Luis Arce Clemente</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Fotocopia de cédula de identidad vigente</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Croquis o plano de ubicación del predio o domicilio</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Certificación de OTB</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Documento que acredite su derecho propietario</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Pago de 2000 Bs para la nueva conexión</div>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div class="alert bg-soft-success mt-3 text-center" role="alert">
+                                    <i class="fas fa-info-circle me-2"></i>Asegúrese de cumplir con todos los requisitos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/scripts.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

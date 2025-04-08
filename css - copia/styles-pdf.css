@@ -1,0 +1,103 @@
+.pdf-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdf-row {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.05), rgba(46, 204, 113, 0.05));
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    border-left: 5px solid var(--primary-color);
+}
+
+.pdf-row:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-row .flex-grow-1 {
+    flex-grow: 1;
+}
+
+.pdf-row h5 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.pdf-row p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.pdf-actions .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.pdf-actions .btn-success {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border: none;
+}
+
+.pdf-actions .btn-primary {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    border: none;
+}
+
+.pdf-actions .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .pdf-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pdf-row img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .pdf-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .pdf-actions .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

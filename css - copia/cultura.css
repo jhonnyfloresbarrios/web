@@ -1,0 +1,259 @@
+
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  padding: 30px;
+}
+
+.event-card {
+  background: linear-gradient(to right, #a8dadc, #c7df93);
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-wrapper {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--soft-blue), var(--soft-green));
+  padding: 50px 0;
+}
+
+.content-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(-45deg);
+  animation: shine 5s infinite linear;
+  z-index: 1;
+}
+
+@keyframes shine {
+  0% { transform: rotate(-45deg) translateX(-100%); }
+  100% { transform: rotate(-45deg) translateX(100%); }
+}
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+.event-card i {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.event-card h4 {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.event-card .event-date {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.event-card p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Estilos para el contenedor de imágenes - Mejorado */
+.image-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-container img.active {
+  opacity: 1;
+}
+
+/*----------------------------------------------------------------*/
+
+/* Estilos para la sección Cultura, Comunicación y Turismo */
+#cultura-info {
+  padding: 30px;
+  background-color: #1060b0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#cultura-info h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 8px;
+  font-size: 2.5em;
+}
+
+#cultura-info p {
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+/* Estilos para la lista de eventos */
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  background-color: #d15656;
+  border: 1px solid #c75858;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.event-list li h4 {
+  color: #28a745;
+  margin-bottom: 8px;
+  font-size: 1.4em;
+}
+
+.event-list li p {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+/* Nuevos estilos para la sección de Promoción del Turismo y Comunicación */
+.tourism-communication {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  background: linear-gradient(to right, #a8dadc, #457b9d);
+  color: #fff;
+}
+
+.tourism-communication .tourism-box,
+.tourism-communication .communication-box {
+  width: 48%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tourism-communication h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tourism-communication p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.tourism-communication a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1.1em;
+}
+
+.tourism-communication a:hover {
+  color: #fff;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+
+  header .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  header .logo h1 {
+    font-size: 1.5em;
+  }
+
+  header nav ul li {
+    margin: 0 8px;
+  }
+
+  header nav ul li a {
+    font-size: 1em;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 15px;
+  }
+
+  .event-card {
+    padding: 25px;
+  }
+
+  .tourism-communication {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .tourism-communication .tourism-box,
+  .tourism-communication .communication-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tourism-communication h3 {
+    font-size: 2em;
+  }
+
+  .tourism-communication p {
+    font-size: 1.1em;
+  }
+}
